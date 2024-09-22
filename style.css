@@ -386,7 +386,14 @@ a{
     padding-top: 2rem;
     border-top: 1px solid var(--gray);
 }
-
+.mobile-menu-btn {
+      display: none; /* Hidden by default */
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
+    }
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links, .header .btn-outline {
