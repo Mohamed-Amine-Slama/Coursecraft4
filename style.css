@@ -418,6 +418,31 @@ a{
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 768px) {
+      .nav-links {
+        display: none; /* Hide the navigation links */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: var(--white);
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-links.active {
+        display: flex; /* Show the navigation links when active */
+      }
+
+      .nav-links li {
+        margin: 1rem 0;
+        text-align: center;
+      }
+
+      .mobile-menu-btn {
+        display: block; /* Show the mobile menu button */
+      }
+    }
 .card {
     position: relative;
     display: inline-table;
@@ -756,51 +781,7 @@ i{
     display: flex;
     align-items: center;
 }
-.teachers {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-}
 
-.teachers h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.teachers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.teacher-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.teacher-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.teacher-card h4 {
-    font-size: 18px;
-    margin-top: 0;
-}
-.teacher-card:hover {
-    transform: translateY(-5px); /* Slightly lifts the card */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increases shadow for a lifting effect */
-}
-.teacher-card:hover .teacher-photo {
-    transform: scale(1.1); /* Slightly enlarges the photo */
-}
 .newsletter-form .hello{
     color:#00a8fa;
 }
